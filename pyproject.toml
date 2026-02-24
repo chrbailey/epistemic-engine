@@ -1,0 +1,15 @@
+[project]
+name = "epistemic-engine"
+version = "0.1.0"
+description = "Unified epistemic reasoning: world model, belief propagation, flow control"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+belief = ["belief-math"]
+llm = ["anthropic>=0.18.0"]
+demo = ["streamlit>=1.28.0", "plotly>=5.18.0", "pandas>=2.0.0"]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

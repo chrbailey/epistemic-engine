@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Label (unique identifier) -->
+    <key>Label</key>
+    <string>com.user.knowledge-indexer</string>
+
+    <!-- What to run -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/christopherbailey/Desktop/unified-belief-system/file-indexer/indexer.py</string>
+        <string>--output</string>
+        <string>/Users/christopherbailey/Dropbox/knowledge.yaml</string>
+    </array>
+
+    <!-- Run daily at 6 AM -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Also run on load (first time / after reboot) -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- Working directory -->
+    <key>WorkingDirectory</key>
+    <string>/Users/christopherbailey/Desktop/unified-belief-system/file-indexer</string>
+
+    <!-- Log output -->
+    <key>StandardOutPath</key>
+    <string>/Users/christopherbailey/Library/Logs/knowledge-indexer.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/christopherbailey/Library/Logs/knowledge-indexer.error.log</string>
+
+    <!-- Don't run if on battery -->
+    <key>LowPriorityIO</key>
+    <true/>
+
+    <!-- Nice level (lower priority) -->
+    <key>Nice</key>
+    <integer>10</integer>
+
+    <!-- Environment variables -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/christopherbailey</string>
+    </dict>
+</dict>
+</plist>

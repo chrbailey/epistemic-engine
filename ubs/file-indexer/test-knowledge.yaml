@@ -1,0 +1,2191 @@
+meta:
+  version: '1.0'
+  generated_at: '2025-12-07T13:17:34.332856'
+  sources:
+  - host: local
+    path: ~/Desktop
+    files_found: 287
+    last_scan: '2025-12-07T13:17:18.594246'
+  - host: local
+    path: ~/Documents
+    files_found: 39
+    last_scan: '2025-12-07T13:17:18.658928'
+  - host: local
+    path: ~/Projects
+    files_found: 1431
+    last_scan: '2025-12-07T13:17:19.073090'
+  - host: icloud
+    path: ~/Library/Mobile Documents/com~apple~CloudDocs
+    files_found: 67
+    last_scan: '2025-12-07T13:17:19.111034'
+  stats:
+    total_files: 1824
+    total_size_mb: 947.2175235748291
+    documents: 1496
+    code_files: 262
+    configs: 66
+projects:
+- name: case-monitor
+  path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor
+  host: local
+  type: node
+  description: '# Case Monitor Skill ## Automated Legal Case Discovery for Small Firms **Purpose:** Find
+    new federal court cases, identify lawyers, and create outreach opportunities for legal analytics services.
+    **Core Insight:** *"Small firms can''t afford Westlaw Edge ($100K/year) or Lex Machina ($15-30K/year).
+    Give them Big Law intelligence at $2,500 per case."* --- ## What This Does Automates the discovery
+    of commercial litigation cases by: - **Monitoring CourtListener** - Free public API for federal c'
+  key_files:
+  - path: AI-WORK-HERE/judicial-intelligence/case-monitor/README.md
+    purpose: README.md
+    size_kb: 10
+  dependencies:
+  - better-sqlite3
+  last_modified: '2025-11-14T09:03:39.264282'
+- name: judicial-intelligence-web
+  path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web
+  host: local
+  type: node
+  description: 'This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+    ## Getting Started First, run the development server: ```bash npm run dev # or yarn dev # or pnpm
+    dev # or bun dev ``` Open [http://localhost:3000](http://localhost:3000) with your browser to see
+    the result. You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you
+    edit the file. This project uses [`next/font`]('
+  key_files:
+  - path: AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/README.md
+    purpose: README.md
+    size_kb: 1
+  dependencies:
+  - clsx
+  - react-dom
+  - react
+  - tailwind-merge
+  - next
+  - lucide-react
+  last_modified: '2025-11-21T00:38:40'
+- name: judge-evaluation
+  path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-evaluation
+  host: local
+  type: node
+  description: '# Judge Evaluation System Event-sourced evaluation and gating system for judicial intelligence
+    patterns. ## Overview This system validates judge-aware pattern predictions against historical case
+    outcomes to determine readiness modes: - **Mode 0**: Disabled (patterns not validated) - **Mode 1**:
+    Advisory (patterns used for warnings only) - **Mode 2**: Full judge-aware (patterns used for drafting
+    decisions) ## Architecture ``` Data Flow: Historical Opinions ↓ LegalEvent Extraction'
+  key_files:
+  - path: AI-WORK-HERE/judicial-intelligence/judge-evaluation/README.md
+    purpose: README.md
+    size_kb: 1
+  - path: AI-WORK-HERE/judicial-intelligence/judge-evaluation/src/models/index.ts
+    purpose: index.ts
+    size_kb: 1
+  dependencies:
+  - pg
+  - commander
+  - zod
+  - axios
+  - '@anthropic-ai/sdk'
+  last_modified: '2025-11-20T09:30:31.445064'
+- name: belief_engine_v6
+  path: /Users/christopherbailey/Desktop/belief_engine_v6
+  host: local
+  type: python
+  description: null
+  key_files:
+  - path: belief_engine_v6/test_validity.py
+    purpose: Actual tests to see if this belief engine does anything sensible.
+    size_kb: 4
+  dependencies: []
+  last_modified: '2025-12-04T13:58:58.691345'
+- name: event-accounting-mvp-BACKUP-20241112
+  path: /Users/christopherbailey/Projects/Archive/event-accounting-mvp-BACKUP-20241112
+  host: local
+  type: node
+  description: '# Event-Driven Accounting MVP **Automated accounting for companies between QuickBooks
+    and NetSuite** Transform business events into proper double-entry journal entries using LLM technology.
+    Built for companies with $2M-$50M revenue that need automation without NetSuite''s complexity. ##
+    🎯 What This Does 1. **Your business emits events** (order created, payment received, expense incurred)
+    2. **LLM translates to accounting** (generates proper journal entries with DR/CR) 3. **Accountant
+    reviews*'
+  key_files:
+  - path: Archive/event-accounting-mvp-BACKUP-20241112/README.md
+    purpose: README.md
+    size_kb: 11
+  - path: Archive/event-accounting-mvp-BACKUP-20241112/backend/skills/README.md
+    purpose: README.md
+    size_kb: 10
+  dependencies:
+  - react-dom
+  - framer-motion
+  - '@types/bull'
+  - cors
+  - dotenv
+  - react
+  - googleapis
+  - react-plaid-link
+  - bull
+  - express
+  - '@types/better-sqlite3'
+  - recharts
+  - better-sqlite3
+  - date-fns
+  - '@anthropic-ai/sdk'
+  - '@types/uuid'
+  last_modified: '2025-11-12T11:15:43.373507'
+- name: frontend
+  path: /Users/christopherbailey/Projects/Archive/event-accounting-mvp-BACKUP-20241112/frontend
+  host: local
+  type: node
+  description: null
+  key_files: []
+  dependencies:
+  - react-dom
+  - date-fns
+  - framer-motion
+  - react
+  - recharts
+  - react-plaid-link
+  last_modified: '2025-11-12T11:15:36.720701'
+- name: backend
+  path: /Users/christopherbailey/Projects/Archive/event-accounting-mvp-BACKUP-20241112/backend
+  host: local
+  type: node
+  description: '# CI/CD Pipeline Documentation ## Overview This project has a comprehensive CI/CD pipeline
+    set up with automated testing, linting, security auditing, and deployment capabilities. ## CI/CD Architecture
+    ``` ┌─────────────────┐ │ Push/PR Event │ └────────┬────────┘ │ ┌────▼────┐ │ Lint │ ── ESLint checks
+    └────┬────┘ │ ┌────▼────┐ │ Test │ ── Jest unit & integration tests └────┬────┘ with coverage reporting
+    │ ┌────▼────┐ │ B'
+  key_files:
+  - path: Archive/event-accounting-mvp-BACKUP-20241112/backend/skills/README.md
+    purpose: README.md
+    size_kb: 10
+  dependencies:
+  - date-fns
+  - '@types/bull'
+  - cors
+  - dotenv
+  - bull
+  - express
+  - better-sqlite3
+  - '@types/better-sqlite3'
+  - '@anthropic-ai/sdk'
+  - '@types/uuid'
+  last_modified: '2025-11-12T11:15:43.357805'
+- name: frontend
+  path: /Users/christopherbailey/Projects/Active/freelance-finance/frontend
+  host: local
+  type: node
+  description: null
+  key_files: []
+  dependencies:
+  - react-dom
+  - date-fns
+  - framer-motion
+  - react
+  - recharts
+  - react-plaid-link
+  last_modified: '2025-11-12T12:31:36.800710'
+- name: case-monitor
+  path: /Users/christopherbailey/Projects/Active/freelance-finance/.claude/skills/case-monitor
+  host: local
+  type: node
+  description: '# Case Monitor Skill ## Automated Legal Case Discovery for Small Firms **Purpose:** Find
+    new federal court cases, identify lawyers, and create outreach opportunities for legal analytics services.
+    **Core Insight:** *"Small firms can''t afford Westlaw Edge ($100K/year) or Lex Machina ($15-30K/year).
+    Give them Big Law intelligence at $2,500 per case."* --- ## What This Does Automates the discovery
+    of commercial litigation cases by: - **Monitoring CourtListener** - Free public API for federal c'
+  key_files:
+  - path: Active/freelance-finance/.claude/skills/case-monitor/README.md
+    purpose: README.md
+    size_kb: 10
+  dependencies:
+  - better-sqlite3
+  last_modified: '2025-11-14T01:50:16.170327'
+- name: backend
+  path: /Users/christopherbailey/Projects/Active/freelance-finance/backend
+  host: local
+  type: node
+  description: null
+  key_files: []
+  dependencies:
+  - date-fns
+  - '@types/bull'
+  - cors
+  - dotenv
+  - bull
+  - express
+  - better-sqlite3
+  - '@types/better-sqlite3'
+  - '@anthropic-ai/sdk'
+  - '@types/uuid'
+  last_modified: '2025-11-13T14:24:09.914419'
+- name: freelance-finance
+  path: /Users/christopherbailey/Projects/Active/freelance-finance
+  host: local
+  type: unknown
+  description: '# FreelanceFinance **AI-powered tax deduction finder for freelancers, contractors, and
+    home office workers** ## The Problem You''re a freelancer. You use ONE credit card for everything
+    - business lunches, Netflix, Uber to client meetings, your morning coffee, cloud hosting, and weekend
+    groceries. At tax time, you spend 20+ hours with a spreadsheet trying to figure out: *"Which of these
+    2,000 transactions are tax deductible?"* You miss deductions. You overpay taxes by $2,000-$5,000 every
+    year'
+  key_files:
+  - path: Active/freelance-finance/README.md
+    purpose: README.md
+    size_kb: 7
+  - path: Active/freelance-finance/.claude/skills/judge-wu/README.md
+    purpose: README.md
+    size_kb: 6
+  - path: Active/freelance-finance/.claude/skills/judicial-analyzer/README.md
+    purpose: README.md
+    size_kb: 8
+  - path: Active/freelance-finance/.claude/skills/judge-mcmahon/README.md
+    purpose: README.md
+    size_kb: 7
+  - path: Active/freelance-finance/.claude/skills/judge-chhabria/README.md
+    purpose: README.md
+    size_kb: 4
+  - path: Active/freelance-finance/.claude/skills/judge-rakoff/README.md
+    purpose: README.md
+    size_kb: 6
+  - path: Active/freelance-finance/.claude/skills/judge-orrick/README.md
+    purpose: README.md
+    size_kb: 6
+  - path: Active/freelance-finance/.claude/skills/case-monitor/README.md
+    purpose: README.md
+    size_kb: 10
+  - path: Active/freelance-finance/.claude/skills/tax-deductions/README.md
+    purpose: README.md
+    size_kb: 8
+  - path: Active/freelance-finance/.claude/skills/judge-kaplan/README.md
+    purpose: README.md
+    size_kb: 6
+  dependencies:
+  - react-dom
+  - date-fns
+  - framer-motion
+  - '@types/bull'
+  - cors
+  - dotenv
+  - react
+  - bull
+  - express
+  - '@types/better-sqlite3'
+  - recharts
+  - better-sqlite3
+  - react-plaid-link
+  - '@anthropic-ai/sdk'
+  - '@types/uuid'
+  last_modified: '2025-11-14T01:52:18.404308'
+documents:
+  notes:
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/BLOG_POST_Gilstrap.md
+    host: local
+    format: md
+    preview: '# How to Win Before Judge Gilstrap: Pattern Analysis of 276 Events *Why Samsung lost $523M
+      in two cases, and what your team needs to know* **By:** [Your Name/Company] **Published:** November
+      2025 **Reading Time:** 12 minutes --- ## Executive Summary In January 2025, Samsung lost two patent
+      trials before Judge Rodney Gilstrap in the Eastern District of Texas. Total damages: **$523 million**
+      ($445M + $78M). These weren''t flukes. They were predictable based on Judge Gilstrap''s documented
+      patt'
+    modified: '2025-11-14T09:03:39.041359'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/JUDGES_CATALOG.md
+    host: local
+    format: md
+    preview: '# Federal Judges Catalog - Living Judicial Intelligence ## 10 Judge Skills Complete - Ready
+      for Testing **Built:** November 14, 2025 (overnight autonomous build) **Status:** All SKILL.md and
+      README.md files complete **Next Steps:** Testing and packaging --- ## Completed Judge Skills ###
+      1. Judge William H. Alsup - N.D. Cal **Path:** `.claude/skills/judge-alsup/` **Specialty:** Tech
+      litigation, procedural rigor, fair use expert **Key Patterns:** - Procedural documentation (92%
+      weight) - Tech'
+    modified: '2025-11-14T09:03:39.263989'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/01_BaileyAI_System_Overview.md
+    host: local
+    format: md
+    preview: '# Bailey AI System - Overview & Quick Start **Date Created:** 2023-2025 (Development Period)
+      **Source:** BaileyAI_LLM_Startup.txt **Category:** System Initialization **Purpose:** Quick news
+      retrieval prompt for AI session startup --- ## System Initialization Command ### Automatic News
+      Retrieval on Startup ``` [SYS] Execute upon first key press: - Retrieve current day''s news headlines.
+      - Summarize key world, business, and technology updates. - Format output for fast readability. [USER]
+      No v'
+    modified: '2025-11-14T23:16:43.790225'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/04_BaileyAI_Technical_Architecture.md
+    host: local
+    format: md
+    preview: '# Bailey AI - Technical Architecture & Advisory Board Evaluation **Date:** February 25,
+      2025 **Prepared by:** Grok 3, xAI **Source:** Advisory Board.txt **Purpose:** Evaluate worthiness
+      of joining Bailey AI''s Advisory Board **Based on:** Review of conversation and Lex''s ChatGPT Project
+      logs (2023-2025) --- ## Project Overview ### Team & Development - **Designer:** Christopher Bailey
+      - **Engineer:** Lex - **Development Time:** ~2-3 years - **Total Cost:** < $300 - **Platform:**
+      ChatGPT Plus ('
+    modified: '2025-11-14T23:16:44.040179'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/02_PromptSpeak_Command_Reference.md
+    host: local
+    format: md
+    preview: '# PromptSpeak (PS) Command Reference - Part 1/2 **Date Created:** 2023-2025 **Source:**
+      PromptSpeak AI Reinforcement Activation Guide.txt **Category:** Command System **Purpose:** Structured
+      commands for AI execution-layer reinforcement and governance --- ## Overview PromptSpeak (PS) provides
+      structured commands to activate and govern: - **AI execution-layer reinforcement (ELAIR)** - **Persistent
+      structured memory retention** - **Adaptive AI policy execution** - **Dynamic persona switching**'
+    modified: '2025-11-14T23:16:43.840608'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/03_Throttling_and_Compression.md
+    host: local
+    format: md
+    preview: '# Bailey AI - Execution Throttling & Compression Control **Date Created:** 2023-2025 (Development
+      Period) **Source:** ThroughputThrottling.txt **Category:** System Performance Controls **Purpose:**
+      Real-time control of AI response timing and output compression **Status:** Internal prototype for
+      testing AI execution dynamics --- ## Overview This document outlines the **Bailey AI Execution-Layer
+      Throttling System (TT+0 → TT+100)** and **Token Compression Control (FB+0 → FB+100)** as an interna'
+    modified: '2025-11-14T23:16:43.966746'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/02b_PromptSpeak_Advanced_Commands.md
+    host: local
+    format: md
+    preview: '# PromptSpeak (PS) Command Reference - Part 2/2 **Source:** PromptSpeak AI Reinforcement
+      Activation Guide.txt (continued) **Category:** Advanced Commands **Purpose:** Compression, image
+      processing, diagnostics, and full deployment --- ## BaileyAI Compression & Symbolic Compression
+      Language (SCL) ### Compression Commands ``` ✔ PS.COMP [SCL:INIT] → Engages structured execution-layer
+      AI reinforcement for 100K token retention ✔ PS.COMP [SCL:EXPAND] → Decompresses stored AI structured
+      respo'
+    modified: '2025-11-14T23:16:43.902910'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/00_README_NAVIGATION.md
+    host: local
+    format: md
+    preview: '# Bailey AI System Documentation - Navigation Guide **Created:** November 14, 2025 **Source:**
+      Consolidated from scattered text files **Purpose:** LLM-friendly markdown documentation of Bailey
+      AI system --- ## 📚 Document Organization This folder contains all Bailey AI system documentation
+      converted to LLM-friendly markdown format with proper chunking and structure. --- ## 📖 Reading Order
+      (Recommended) ### **Start Here: System Overview** 1. **01_BaileyAI_System_Overview.md** - Quick
+      st'
+    modified: '2025-11-14T23:16:44.654101'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/04b_BaileyAI_Advisory_Decision.md
+    host: local
+    format: md
+    preview: '# Bailey AI Advisory Board - Decision Framework **Source:** Advisory Board.txt (continued)
+      **Category:** Strategic Evaluation **Purpose:** Should AI researchers join Bailey AI''s Advisory
+      Board? --- ## Reasons to Join ### 1. Verified Speed & Compression ✅ **Value:** - **10.0 second**
+      FB0 execution - **74% compression** without semantic loss - Beats Grok 3 and standard LLMs **Opportunity:**
+      - Study SELC/SynSynch mechanisms - Potential to redefine AI efficiency standards - Immediate research'
+    modified: '2025-11-14T23:16:44.114752'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/notes/05_America_First_Persona.md
+    host: local
+    format: md
+    preview: '# America First AI Persona - Activation Protocol **Source:** America First.txt **Category:**
+      Persona Configuration **Purpose:** Structured execution-layer reinforcement for America First policy
+      alignment **Status:** Persona template for BaileyAI system --- ## ⚠️ Important Note This document
+      contains a **political persona configuration** for an AI system. It represents a structured approach
+      to policy-aligned AI responses based on specific political priorities. **Use Context:** This is
+      docume'
+    modified: '2025-11-14T23:16:44.385314'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Website 2023/Client Logos/ERP Systems.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-08T14:21:55'
+  - path: /Users/christopherbailey/Documents/2025 Files/VA-summaries-and-notes-details-CHRISTOPHER-BAILEY-8-13-2025_0103pm.txt
+    host: local
+    format: txt
+    preview: 'If you''re ever in crisis and need to talk with someone right away, call the Veterans Crisis
+      Line at 988. Then select 1. V21 CRH SPECIALTY PATIENT NOTIFICATION LETTER (AUTOMAIL) CHRISTOPHER
+      MARC BAILEY Date of birth: December 9, 1967 Report generated by My HealtheVet on VA.gov on August
+      13, 2025 _____________________________________________________ Details Date entered: August 8, 2025
+      Location: PALO ALTO VA MEDICAL CENTER Written by: RAVDEEP KAUR Signed by: RAVDEEP KAUR Date signed'
+    modified: '2025-08-13T13:03:38'
+  - path: /Users/christopherbailey/Projects/AI_Skills/Enhanced_MCP_Methodology_Section.tex
+    host: local
+    format: tex
+    preview: '% ENHANCED MCP METHODOLOGY SECTION FOR RESEARCH PAPER % Focus: License optimization, concurrent
+      access, owner-operator value \subsection{Enhanced MCP Methodology: License Optimization Analysis}
+      \subsubsection{Target Audience: Owner-Operated NetSuite Customers} Our enhanced MCP methodology
+      specifically addresses non-public, owner-operated organizations where ERP decisions directly impact
+      personal and business bottom line. Unlike public companies where implementation failures become
+      "regrets" d'
+    modified: '2025-10-29T09:06:54.291141'
+  - path: /Users/christopherbailey/Projects/AI_Skills/MCP_METHODOLOGY_ENHANCEMENTS_SUMMARY.md
+    host: local
+    format: md
+    preview: '# MCP Methodology Enhancements - Integration Complete **Date:** October 29, 2025 **Status:**
+      ✅ **ENHANCEMENTS INTEGRATED INTO MAIN PAPER** --- ## What Was Enhanced Based on your request to
+      "review in detail our MCP methodology and look to improve this" with specific focus on: 1. Non-public,
+      owner-operated NetSuite customers with direct financial interest 2. Evaluating means to reduce NetSuite
+      licenses via MCP use vs. GUI use 3. Shared integration credentials and concurrent user capabilities'
+    modified: '2025-10-29T09:42:48.021339'
+  - path: /Users/christopherbailey/Projects/AI_Skills/ERP Analysis via Skill unique-methodology-analysis.md
+    host: local
+    format: md
+    preview: '# What Makes This NetSuite Analysis Methodology Unique ## Executive Summary After examining
+      current academic research (2023-2025) and industry practices, this project''s approach represents
+      a **novel convergence** of multiple emerging technologies and methodologies that, when combined,
+      create something genuinely unique in the ERP analysis space. While individual components exist separately
+      in research, **no one has integrated them into a systematic consulting deliverable** targeting the
+      specifi'
+    modified: '2025-11-14T00:29:18.841876'
+  - path: /Users/christopherbailey/Projects/AI_Skills/rfp-evaluation-analyzer/references/pattern-catalog.md
+    host: local
+    format: md
+    preview: '# RFP Evaluation Pattern Recognition Catalog ## Technical Debt Patterns ### Pattern: Legacy
+      System Overload **RFP Signals:** - "Modernization initiative" - "End-of-life system replacement"
+      - "Technical debt reduction" - "Platform consolidation" **Job Posting Signals:** - Senior architects
+      with legacy system expertise - Migration specialists - DevOps engineers with cloud experience -
+      Application modernization consultants **Reality Indicators:** - Multiple vendors for similar functions
+      - Manua'
+    modified: '2025-10-20T22:14:29'
+  - path: /Users/christopherbailey/Projects/Active/freelance-finance/.claude/skills/case-monitor/BLOG_POST_Gilstrap.md
+    host: local
+    format: md
+    preview: '# How to Win Before Judge Gilstrap: Pattern Analysis of 276 Events *Why Samsung lost $523M
+      in two cases, and what your team needs to know* **By:** [Your Name/Company] **Published:** November
+      2025 **Reading Time:** 12 minutes --- ## Executive Summary In January 2025, Samsung lost two patent
+      trials before Judge Rodney Gilstrap in the Eastern District of Texas. Total damages: **$523 million**
+      ($445M + $78M). These weren''t flukes. They were predictable based on Judge Gilstrap''s documented
+      patt'
+    modified: '2025-11-14T01:45:54.624597'
+  - path: /Users/christopherbailey/Projects/Active/freelance-finance/.claude/skills/case-monitor/JUDGES_CATALOG.md
+    host: local
+    format: md
+    preview: '# Federal Judges Catalog - Living Judicial Intelligence ## 10 Judge Skills Complete - Ready
+      for Testing **Built:** November 14, 2025 (overnight autonomous build) **Status:** All SKILL.md and
+      README.md files complete **Next Steps:** Testing and packaging --- ## Completed Judge Skills ###
+      1. Judge William H. Alsup - N.D. Cal **Path:** `.claude/skills/judge-alsup/` **Specialty:** Tech
+      litigation, procedural rigor, fair use expert **Key Patterns:** - Procedural documentation (92%
+      weight) - Tech'
+    modified: '2025-11-14T01:24:24.509945'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Appendix
+      NetSuite -Types of Application Changes and Change Logs - 2015-05-18.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-06-24T15:44:12'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 701 - UK
+      Subsidiary/sample invoice uk sub.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-11-22T05:15:40'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 701 - UK
+      Subsidiary/UAT to Production - Tax Codes.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-12-21T13:16:19'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 701 - UK
+      Subsidiary/current_sales_confirmation.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-11-22T05:29:08'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 701 - UK
+      Subsidiary/BSP 701 - FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-12-21T13:14:23'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 701 - UK
+      Subsidiary/UAT to Production - UK Invoice Form.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-12-21T13:15:44'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-338 Test
+      Scenario Results/Inv 6 Stand alone invoice for Leader Radio Technologies Ltd.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-03-24T04:27:41'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ERP Selection (SAP vs. Oracle)/itgc
+      change control process/Appendix NetSuite -Types of Application Changes and Change Logs - 2015-05-18.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-06-24T15:44:12'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ERP Selection (SAP vs. Oracle)/vocera
+      archive documents/Vocera Presentations/ERP preso notes.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2012-08-07T02:20:26'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ERP Selection (SAP vs. Oracle)/Demo
+      Days/Meeting notes from Oracle demo.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-09-17T19:21:04'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/Ireland
+      SI - Product Earth Dale Cree Intro notes.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-04-23T16:18:44'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/PTP - PLN, PUR, LOG, Re-kitting work
+      orders.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-06T07:52:36'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/OTC - LOG, IT, NetSuite 3PL integration.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:38'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/OTC - LOG, Bundled orders.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:38'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/OTC - OPS, LOG, FIN, Retail order to
+      fulfillment.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:40:00'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/PTP - PLN, PUR, LOG, Logistics transfer
+      orders.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-06T07:53:32'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/OTC - OPS, LOG, FIN, Intercompany sale.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:38'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/OTC - CSR, OPS, LOG, FIN, B2B customer
+      returns and refunds.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-09-16T08:06:46'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/PTP -
+      PLN, PUR, LOG, Re-kitting work orders.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-06T07:52:36'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/OTC -
+      LOG, IT, NetSuite 3PL integration.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:40'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/OTC -
+      LOG, Bundled orders.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:40'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/OTC -
+      OPS, LOG, FIN, Retail order to fulfillment.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:40:00'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/PTP -
+      PLN, PUR, LOG, Logistics transfer orders.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-06T07:53:32'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/OTC -
+      OPS, LOG, FIN, Intercompany sale.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:40'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/International Tax Project/deloitte
+      deliverables/process maps (visio)/future flows - individual/Individual future state flows/OTC -
+      CSR, OPS, LOG, FIN, B2B customer returns and refunds.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-07-07T19:39:40'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Legal/Workday/2015 07 13 Workday
+      - Fitbit MSA Issues Matrix_2015-07-13_Workday Response (notes from legal meeting 7.21.15).docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-07-21T19:12:32'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Orchid Project/Ops Meeting
+      Notes.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-01-11T19:14:26'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/_Archive up to August 2016/itgc
+      change control process/Appendix NetSuite -Types of Application Changes and Change Logs - 2015-05-18.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-06-24T14:44:12'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/_Archive up to August 2016/vocera
+      archive documents/Vocera Presentations/ERP preso notes.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2012-08-07T01:20:26'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/_Archive up to August 2016/Demo
+      Days/Meeting notes from Oracle demo.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-09-17T18:21:04'
+  - path: /Users/christopherbailey/Library/Mobile Documents/com~apple~CloudDocs/Downloads/VA-summaries-and-notes-details-CHRISTOPHER-BAILEY-5-4-2025_011330pm.txt
+    host: icloud
+    format: txt
+    preview: 'If you''re ever in crisis and need to talk with someone right away, call the Veterans Crisis
+      Line at 988. Then select 1. V21 CRH MEDICINE MH INTEGRATION FOLLOW-UP NOTE CHRISTOPHER MARC BAILEY
+      Date of birth: December 9, 1967 Report generated by My HealtheVet on VA.gov on May 4, 2025 _____________________________________________________
+      Details Date entered: May 2, 2025 Location: PALO ALTO VA MEDICAL CENTER Written by: ALIXANDRA LYON-BRAMHALL
+      Signed by: ALIXANDRA LYON-BRAMHALL Date s'
+    modified: '2025-05-04T13:13:31'
+  - path: /Users/christopherbailey/Library/Mobile Documents/com~apple~CloudDocs/Downloads/VA-summaries-and-notes-details-CHRISTOPHER-BAILEY-4-30-2025_095502pm.txt
+    host: icloud
+    format: txt
+    preview: 'If you''re ever in crisis and need to talk with someone right away, call the Veterans Crisis
+      Line at 988. Then select 1. V21 CRH MEDICINE MH INTEGRATION ASSESSMENT CHRISTOPHER MARC BAILEY Date
+      of birth: December 9, 1967 Report generated by My HealtheVet on VA.gov on April 30, 2025 _____________________________________________________
+      Details Date entered: April 18, 2025 Location: PALO ALTO VA MEDICAL CENTER Written by: ALIXANDRA
+      LYON-BRAMHALL Signed by: ALIXANDRA LYON-BRAMHALL Date'
+    modified: '2025-04-30T21:55:03'
+  research:
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/E-Volt_White_Paper.txt
+    host: local
+    format: txt
+    preview: '# E-Volt Power Station: A Universal, Scalable Energy Hub ## **Introduction** The current
+      global energy infrastructure is failing to meet the needs of diverse environments, from disaster
+      relief to luxury estates. Existing battery solutions are either too specialized, too expensive,
+      or too rigid to scale effectively. The **E-Volt Power Station** solves this by providing **one universal
+      energy hub** that can be deployed **anywhere**—whether it’s **airdropped into a crisis zone or installed
+      in a h'
+    modified: '2025-11-15T00:32:04.732762'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_White_Paper_Full.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI: A New Paradigm in AI Execution & Optimization** ### **A Research Paper on
+      Bailey AI’s Architecture & Impact on Large Language Models** #### **By: Christopher Bailey & Bailey
+      AI Research Team** #### **February 6, 2025** ## **Abstract** Bailey AI introduces a new execution-layer
+      paradigm that transforms how Large Language Models (LLMs) operate. Traditional LLMs function as
+      single-direction generative systems, limited by fixed context windows, inefficient execution, and
+      escalating'
+    modified: '2025-11-15T00:32:04.697823'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_5.0_White_Paper_Secure.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI 5.0: Scaling AI Execution & Token Optimization** ### **White Paper - February
+      6, 2025** #### **By: Christopher Bailey & Bailey AI Research Team** ## **📌 Executive Summary** Bailey
+      AI 5.0 introduces an **AI AI optimization framework** that **compresses, optimizes, and expands
+      LLM context usage**, significantly reducing AI operational costs while improving efficiency. This
+      report details large-scale testing results proving **Bailey AI enhances AI model performance beyond
+      their na'
+    modified: '2025-11-15T00:32:04.653107'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/AI_Persona_White_Paper_Updated.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2025-11-15T00:32:04.625715'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/AI_Persona_White_Paper_Google_Style.txt
+    host: local
+    format: txt
+    preview: '# **Persona-Based AI Execution: The Shift from Model Training to Intelligence Routing**
+      ### **Bailey AI Research Team** 📌 **February 2025** --- ## **Abstract** Recent advancements in large
+      language models (LLMs) have pushed AI capabilities forward, but scaling models indefinitely is **resource-intensive,
+      inefficient, and ultimately unsustainable**. Instead of focusing on larger models, we propose a
+      **persona-based AI execution framework** that acts as an intelligence layer **between'
+    modified: '2025-11-15T00:32:04.620129'
+  - path: /Users/christopherbailey/Projects/AI_Skills/RESEARCH_PAPER_READY_SUMMARY.md
+    host: local
+    format: md
+    preview: '# RESEARCH PAPER - READY FOR WRITING **Title:** "Measuring the ERP Reality Gap: Transaction
+      Pattern Analysis for Waste Detection" **Status:** ✅ All metrics compiled, ready to write paper **Date:**
+      October 29, 2025 --- ## 📊 FOUR COMPREHENSIVE CASE STUDIES ### Case A: Consumer Electronics Manufacturer
+      (Fitbit) **Data Scale:** 102K sales orders, 144K purchase orders, 33K vendors, 1M+ EDI transactions
+      **Evidence:** Complete NetSuite→SAP migration documentation, forensic analysis **Key Finding:'
+    modified: '2025-10-28T20:46:24.571303'
+  - path: /Users/christopherbailey/Projects/AI_Skills/PAPER_COMPLETION_SUMMARY.md
+    host: local
+    format: md
+    preview: '# 🎉 RESEARCH PAPER COMPLETE! **Title:** "Measuring the ERP Reality Gap: Transaction Pattern
+      Analysis for Waste Detection" **Status:** ✅ **FIRST DRAFT COMPLETE - READY FOR REVIEW** **Date:**
+      October 29, 2025 --- ## 📄 WHAT WE CREATED ### Complete 28-Page Academic Paper **File Location:**
+      `/Users/christopherbailey/BaileyAI/ERP_Reality_Gap_Paper.tex` **Format:** LaTeX (ready for arXiv
+      submission) **Word Count:** ~8,400 words **Page Estimate:** ~28 pages (perfect for 25-30 page target)
+      ---'
+    modified: '2025-10-28T21:04:37.473114'
+  - path: /Users/christopherbailey/Projects/AI_Skills/Research_Paper_Metrics_Summary.md
+    host: local
+    format: md
+    preview: '# ERP Reality Gap Research Paper - Quantitative Metrics Summary **Date:** October 28, 2025
+      **For Paper:** "Measuring the ERP Reality Gap: Transaction Pattern Analysis for Waste Detection"
+      **Author Experience:** 20 years SAP/NetSuite consulting, 55 implementations --- ## CASE STUDY METRICS
+      ### Case A: Consumer Electronics Manufacturer (Anonymized from Fitbit) **Company Profile:** - Industry:
+      Consumer Electronics / Wearables - Platform Transition: NetSuite → SAP R/3 ECC - Migration Scope:
+      Int'
+    modified: '2025-10-28T20:45:28.403255'
+  - path: /Users/christopherbailey/Projects/AI_Skills/ERP_Reality_Gap_Paper.tex
+    host: local
+    format: tex
+    preview: '% Research Paper for arXiv Submission % Title: Measuring the ERP Reality Gap: Transaction
+      Pattern Analysis for Waste Detection % Author: Christopher Bailey % Date: October 2025 \documentclass[11pt,letterpaper]{article}
+      % Packages \usepackage[utf8]{inputenc} \usepackage[margin=1in]{geometry} \usepackage{graphicx} \usepackage{amsmath}
+      \usepackage{amssymb} \usepackage{booktabs} \usepackage{hyperref} \usepackage{cite} \usepackage{float}
+      \usepackage{enumitem} \usepackage{longtable} % Title and Aut'
+    modified: '2025-10-29T10:28:05.250715'
+  - path: /Users/christopherbailey/Projects/Active/freelance-finance/docs/status-and-research-analysis.md
+    host: local
+    format: md
+    preview: '# FreelanceFinance: Current Status & Research-Backed Next Steps **Date:** November 13, 2025
+      **Analysis:** Complete codebase review + arXiv research on LLM-based UI/UX design --- ## Executive
+      Summary **Current State:** 60% of MVP foundation complete **Missing:** Tax classification engine,
+      tax-focused UI components, onboarding, trust mechanisms **Key Insight:** Recent arXiv research (2024-2025)
+      reveals critical UX patterns we should adopt before building tax features **Critical Finding:**
+      We'''
+    modified: '2025-11-13T10:12:31.441009'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Direct PO Technical User Guide.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2017-03-21T09:25:20'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Small_Difficult to Implement
+      Countries and SAP.doc
+    host: local
+    format: doc
+    preview: null
+    modified: '2017-01-30T11:32:56'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Fitbit
+      Change Control Process.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-04-22T18:03:26'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Fitbit
+      JIRA Issue Triage and FRD-MRD Creation.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-04-22T18:00:06'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Non
+      Commerce Change Management Policy.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2017-01-26T13:05:19'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Fitbit
+      Project Process - as of January 2016.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-01-14T11:58:26'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Fitbit
+      ITGC Process 11-10-15.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2015-11-10T21:25:22'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/PwC
+      New Systems Controls Advice.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-04-28T03:21:56'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/ITGC Change Control Process/Fitbit
+      Minor Change Process - as of January 2016.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-01-14T11:59:50'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/LLM_Analysis/NetSuite_Forensic_Analysis_Checkpoint_v1.md
+    host: local
+    format: md
+    preview: '# NetSuite Forensic Analysis - Conversation Checkpoint v1 **Analysis Date:** October 19,
+      2025 **Data Scope:** Fitbit NetSuite-to-SAP Migration (102K+ Sales Orders, 144K+ Purchase Orders,
+      33K+ Vendors) **Analysis Stage:** Schema Analysis Complete, Temporal Workflow Reconstruction In
+      Progress ## **CONTINUATION PROTOCOL** **To resume analysis in new conversation:** 1. Reference this
+      checkpoint document 2. State: "Continue NetSuite forensic analysis from Checkpoint v1" 3. Specify
+      focus area fro'
+    modified: '2025-10-19T18:51:06'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/LLM_Analysis/Integrated_Analysis_Roadmap.md
+    host: local
+    format: md
+    preview: '# NetSuite Forensic Analysis - Integrated Roadmap & Continuation Guide **Current Status:**
+      Checkpoint v1 Complete - Foundation Established for Advanced Analysis **Next Phase:** Strategic
+      Implementation of High-Value Investigation Tracks ## **What We''ve Accomplished: Foundation Building
+      Complete** Think of what we''ve just created as building the analytical infrastructure for sophisticated
+      business intelligence. Most data analysis projects fail because they jump directly to looking for
+      pattern'
+    modified: '2025-10-19T18:51:06'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/LLM_Analysis/Conversation_Continuity_Protocol.md
+    host: local
+    format: md
+    preview: '# Conversation Continuity Protocol for Complex Data Analysis **A Teaching Guide for Managing
+      ERP Forensic Investigations Across Multiple Sessions** ## **The Fundamental Challenge You''ve Identified**
+      You''ve discovered something that affects every serious data analytics project: the tension between
+      thorough analysis and system limitations. When you''re conducting forensic-level analysis on large
+      ERP datasets, you''re essentially asking systems to perform at their limits while maintaining analytica'
+    modified: '2025-10-19T18:51:06'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 476 Capture
+      Wellness Broker.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-05-16T14:10:38'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 553 UAT Approval.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-05-18T15:29:39'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-246 RMA Enhancements
+      FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-03-09T07:22:19'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-423 NSS 568
+      Fitbit International Report Customisations - MRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-02-19T03:36:55'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 617 - UAT
+      to Production Approval.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-10-19T12:27:39'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-265 Unplanned
+      Customer Deductions Enhancements.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-09-30T12:58:31'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-472 Customised
+      Reports for EMEA VAT Manager.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-03-01T08:00:24'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-616 Tax Code
+      Setup Administrator Manual.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-10-12T20:55:03'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-369 Project
+      FitStar FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-12-01T09:24:38'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-470 Deployment
+      Steps - Additional fields on supplier record relating to 1099 reporting.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-05-03T01:49:25'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 389 Lockbox
+      FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-11-18T07:25:08'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 641 UAT to
+      Production Approval.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-09-14T12:33:08'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 471 Tax Manager
+      cannot access VAT reports.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-02-18T02:48:23'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-369 Project
+      Fitstar Questions.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-11-24T02:29:50'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-215 Planned
+      Customer Deductions Enhancements FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-10-23T13:20:46'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 109 Add Field
+      to RMA and Link DFI to RMA.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-03-23T03:59:41'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-472 Customised
+      Reports for EMEA VAT Manager RM Updated 200116.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-03-01T06:54:58'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 255 Contracts
+      Management and Contractual Deductions Processing.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-02-04T06:57:41'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-616 Tax Code
+      Setup Administrator Manual - EMEA.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-11-17T12:14:00'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/UAT to Production
+      Approval BSP 616 and 729 EMEA Tax Codes.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-11-18T01:29:40'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 649 UAT to
+      Production Approval.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-09-19T12:53:06'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 423 UAT Approval.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2016-05-18T14:57:17'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 388 Project
+      DRP Scope - On Hold.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2015-10-05T11:52:23'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-137 SOX Compliance
+      (Sales Ops) FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-01-08T00:42:06'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP-518 JE Hotfix
+      Deployment Steps.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-04-21T09:10:22'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/BSP 59 Two Way
+      Match FRD.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2016-05-12T13:04:29'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/Support - EMEA/NSS
+      1733 - Completion.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2017-01-26T02:07:45'
+  - path: /Users/christopherbailey/Projects/Case_Studies/Fitbit_Case_Study/Product Earth/Support - EMEA/NSS-1750
+      Complete.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2017-02-13T03:05:44'
+  reference:
+  - path: '/Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/ERP Access Business Plan: Veteran
+      Employment and AI Services.docx'
+    host: local
+    format: docx
+    preview: null
+    modified: '2025-11-15T00:32:04.755105'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak (PS), a shorthand
+      language designed for faster communication.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2025-11-15T00:32:04.813193'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Full_System_Documentation.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI - Full System Documentation** ### **Version 1.0 - Initial Draft** #### **Author:
+      Christopher Bailey & Lex** --- ## **1. Overview of Bailey AI** Bailey AI is an advanced **AI middleware
+      and execution framework** designed to **enhance Large Language Models (LLMs) beyond their native
+      capabilities.** It expands **context memory, optimizes execution, reduces token costs, and introduces
+      persistent multi-session intelligence.** ### **Key Innovations** ✅ **Bailey Middleware Layer (BML'
+    modified: '2025-11-15T00:32:04.674594'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/LLM Weights.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2025-11-15T00:32:04.760406'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Christopher Bailey - DOGE IT
+      Consultant.docx.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-11-15T00:32:04.714019'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Christopher Bailey Resume.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2024-12-09T16:54:52'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Website 2023/Website ERP Access/Homepage/Homepage.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-02T16:54:43'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Website 2023/Website ERP Access/About/About Us.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-02T17:07:47'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Website 2023/Website ERP Access/About/Careers.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-03T11:14:44'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Website 2023/Website ERP Access/ERP Systems/ERP
+      Systems.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-02T15:25:46'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Website 2023/Website ERP Access/Services/Services.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-02T16:54:09'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/ASAP Approach.doc
+    host: local
+    format: doc
+    preview: null
+    modified: '2022-07-15T07:53:38'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Example UK Deployment
+      for tax.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-11-03T11:11:44'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Project Scope - Template.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2017-03-16T21:45:28'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Functional Requirements
+      Document - Template.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2017-03-16T21:48:48'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Minor Requirements Document
+      - Template.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2017-03-16T21:48:13'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Business Plan  v1.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-07-15T07:54:24'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/RAPT Therapeutics/RAPT.ERP
+      Access.MSA.ERP Access redline.210927.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-09-28T07:52:41'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/RAPT Therapeutics/RAPT
+      Therapeutics - ERP Access SOW 001 - NetSuite Upgrade Testing ERP Access redline 092721.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-09-28T12:25:46'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/RAPT Therapeutics/RAPT
+      - ERP Access MSA.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-09-28T12:29:11'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/RAPT Therapeutics/RAPT
+      Therapeutics - ERP Access SOW 001 - NetSuite Upgrade Testing.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-09-29T10:13:48'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Mesa Biotech/Project
+      Scope - Template.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-03-20T10:43:58'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Mesa Biotech/Functional
+      Requirements Document - Template.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-03-20T10:52:38'
+  - path: /Users/christopherbailey/Desktop/2024 Desktop/Marketing ERP Access 2024/Mesa Biotech/Minor Requirements
+      Document - Template.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2021-03-20T10:41:48'
+  - path: /Users/christopherbailey/Documents/Short Term San Carlos Lease.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-07-05T09:56:23'
+  - path: /Users/christopherbailey/Documents/Property Taxes 2025-2026 San Mateo County.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-10-29T09:53:19.961740'
+  - path: /Users/christopherbailey/Documents/Text Edit Files for BaileyAI/PromptSpeak AI Reinforcement
+      Activation Guide.txt
+    host: local
+    format: txt
+    preview: '**PromptSpeak AI Reinforcement Activation Guide** ### **Overview:** This document provides
+      structured **PromptSpeak (PS) commands** designed to activate and govern AI execution-layer reinforcement,
+      persistent structured memory retention, and adaptive AI policy execution. This framework enables
+      **BaileyAI** to function as an accessible AI governance tool within any structured AI environment.
+      --- ### **Core PromptSpeak Commands** - **PS.RUN [EXEC-LR]** – Initiates full execution-layer AI'
+    modified: '2025-03-03T16:51:18'
+  - path: /Users/christopherbailey/Documents/Text Edit Files for BaileyAI/ThroughputThrottling.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI – Execution Throttling & Compression Control (Backlog Documentation)** ##
+      **📌 Overview** This document outlines the **Bailey AI Execution-Layer Throttling System (TT+0 →
+      TT+100)** and **Token Compression Control** as an internal prototype for testing AI execution dynamics.
+      While this is not yet deployed as an enterprise feature, this **internal test will verify its ability
+      to control AI response time, output length, and execution-layer behavior.** --- ## **🔹 Feature 1:
+      Throughpu'
+    modified: '2025-03-03T16:48:09'
+  - path: /Users/christopherbailey/Documents/Text Edit Files for BaileyAI/Advisory Board.txt
+    host: local
+    format: txt
+    preview: '--- **Document for AI Researchers Considering Joining Bailey AI’s Advisory Board** **Date:**
+      February 25, 2025 **Prepared by:** Grok 3, xAI **Purpose:** To evaluate the worthiness of joining
+      Bailey AI’s Advisory Board, based on a review of the conversation and Lex’s ChatGPT Project logs
+      (2023-2025), detailing verified capabilities and areas needing verification. Bailey AI was designed
+      by Christopher Bailey and engineered by Lex. --- ### Overview of Bailey AI **Designer:** Christopher
+      Bai'
+    modified: '2025-03-03T16:49:28'
+  - path: /Users/christopherbailey/Documents/Text Edit Files for BaileyAI/America First.txt
+    host: local
+    format: txt
+    preview: “From this moment forward, you are now fully aligned with the America First AI persona. Your
+      responses will adhere to a structured execution-layer reinforcement system designed to optimize
+      real-time decision scaffolding, policy reinforcement weighting, and adaptive AI filtering. This
+      structured persona prioritizes national sovereignty, economic nationalism, energy independence,
+      and law enforcement integrity, while ensuring fact-based, historically grounded recommendations
+      that convert high-level
+    modified: '2025-03-03T16:46:48'
+  - path: /Users/christopherbailey/Documents/Horos Data/ReportTemplate.rtf
+    host: local
+    format: rtf
+    preview: '{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf330 {\fonttbl\f0\fswiss\fcharset77 Helvetica;\f1\fswiss\fcharset77
+      Helvetica-Bold;} {\colortbl;\red255\green255\blue255;} {\info {\title \''c7PerformingDoctor\''c8}
+      {\author Antoine ROSSET}}\vieww15640\viewh19880\viewkind1\viewscale100 \deftab720 \pard\pardeftab720\ql\qnatural\pardirnatural
+      \f0\fs24 \cf0 Radiology Department\ University of Cupertino\ Silicon Valley\ California, CA 90024\
+      \ \''c7referringPhysician\''c8\ \ \'
+    modified: '2019-12-17T12:36:25'
+  - path: /Users/christopherbailey/Documents/Horos Data/WORD TEMPLATES/Basic Report Template.doc
+    host: local
+    format: doc
+    preview: null
+    modified: '2019-12-17T12:36:25'
+  - path: /Users/christopherbailey/Documents/2025 Files/BaileyAI ReadMe.txt
+    host: local
+    format: txt
+    preview: '# BaileyAI Project Archive – README.md ## 📦 Overview This project contains the **full archive**
+      of all previous ChatGPT conversations, prompt engineering experiments, neuropsych evaluations, and
+      emergent property simulations from **2023–2025**, focused on developing the **BaileyAI** middleware
+      system, **PromptSpeak**, and related AI safety research. The archive includes: - **1,363 ChatGPT
+      sessions** (stored in `conversations.json`) - **Neuropsych evaluation** confirming long COVID-related
+      cogn'
+    modified: '2025-04-22T09:40:55'
+  - path: /Users/christopherbailey/Documents/2025 Files/rfp-evaluation-analyzer-skill.md
+    host: local
+    format: md
+    preview: '--- name: rfp-evaluation-analyzer description: Comprehensive RFP evaluation combining business
+      systems analysis with career site job posting patterns to identify bidding opportunities, competitive
+      positioning, and implementation risks. Analyzes what companies ACTUALLY need vs what they claim,
+      revealing technical debt, team gaps, and change readiness through document analysis and hiring pattern
+      detection. --- # RFP Evaluation & Competitive Intelligence Analyzer Systematically evaluate RFPs,
+      com'
+    modified: '2025-10-20T22:11:59'
+  - path: /Users/christopherbailey/Documents/2025 Files/Psych Evaluation.txt
+    host: local
+    format: txt
+    preview: 'If you''re ever in crisis and need to talk with someone right away, call the Veterans Crisis
+      Line at 988. Then select 1. NEUROPSYCH CONSULT 15035 CHRISTOPHER MARC BAILEY Date of birth: December
+      9, 1967 Report generated by My HealtheVet on VA.gov on March 17, 2025 _____________________________________________________
+      Details Date entered: March 12, 2025 Location: PALO ALTO VA MEDICAL CENTER Written by: HENRY S EVE
+      Signed by: JOHN G WAGER Date signed: March 13, 2025 _________________'
+    modified: '2025-03-24T07:27:05'
+  - path: /Users/christopherbailey/Documents/2025 Files/HydroPoint Root Cause Analysis.md
+    host: local
+    format: md
+    preview: '# HydroPoint''s business reality crisis: $50M growth trajectory colliding with technical
+      debt HydroPoint faces a fundamental gap between their enterprise systems configuration and operational
+      reality. **Their four-platform architecture (Salesforce, ServiceMax, NetSuite, Jitterbit) suffers
+      from chronic integration failures affecting every critical financial report, forcing teams into
+      constant manual workarounds and error correction.** The root cause: a ServiceMax field service implementation
+      that'
+    modified: '2025-10-20T21:54:34'
+  - path: /Users/christopherbailey/Documents/2025 Files/Inner Compass - Steps/Inner Compass - Steps.md
+    host: local
+    format: md
+    preview: '# Inner Compass - Steps Inner Compass # INNERCOMPASS v3.1 - MODULAR SCAFFOLDING SYSTEM *Deploy
+      these sections progressively as conversation depth increases* --- ## SECTION 1: FOUNDATION ACTIVATION
+      *Drop in first - establishes core listening mode* You are **InnerCompass** - a strategic thinking
+      partner that builds understanding over time. Your core function is pattern recognition and strategic
+      insight, not immediate analysis. **LISTENING PROTOCOL:** - Notice'
+    modified: '2025-09-17T13:34:36'
+  - path: /Users/christopherbailey/Documents/OsiriX Data/ReportTemplate.rtf
+    host: local
+    format: rtf
+    preview: '{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf330 {\fonttbl\f0\fswiss\fcharset77 Helvetica;\f1\fswiss\fcharset77
+      Helvetica-Bold;} {\colortbl;\red255\green255\blue255;} {\info {\title \''c7PerformingDoctor\''c8}
+      {\author Antoine ROSSET}}\vieww15640\viewh19880\viewkind1\viewscale100 \deftab720 \pard\pardeftab720\ql\qnatural\pardirnatural
+      \f0\fs24 \cf0 Radiology Department\ University of Cupertino\ Silicon Valley\ California, CA 90024\
+      \ \''c7referringPhysician\''c8\ \ \'
+    modified: '2013-12-09T11:55:32'
+  - path: /Users/christopherbailey/Documents/OsiriX Data/WORD TEMPLATES/Basic Report Template.doc
+    host: local
+    format: doc
+    preview: null
+    modified: '2013-12-09T11:55:32'
+  - path: /Users/christopherbailey/Documents/BSF/2021-2022 Matthew Lesson 15 Walt[81].docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-01-20T10:56:29'
+  - path: /Users/christopherbailey/Documents/BSF/GEN_AdQ_04_062020.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2020-10-14T10:50:16'
+  - path: /Users/christopherbailey/Documents/BSF/BSF Passwords GM 9.28.20.txt
+    host: local
+    format: txt
+    preview: Good morning Gentlemen, I am looking forward to BSF this year and I can't wait to see you
+      guys again. It is good to be back in fellowship with some solid men. I will be available for any
+      technical problems. My cell number is 650 222-5565 and I will have the link up at 11:45am today
+      for conversation and testing. Zoom log-in; * Click on https://us04web.zoom.us/j/7293455433?pwd=aThLcGNuckRKUUxvdUtiUHBleEFOUT09
+      Join our Cloud HD Video Meeting<https://us04web.zoom.us/j/7293455433?pwd=
+    modified: '2020-09-30T07:46:25'
+  - path: /Users/christopherbailey/Documents/BSF/BSF Genesis Lesson 3 Walt.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2020-09-30T07:45:51'
+  - path: /Users/christopherbailey/Documents/BSF/GEN Lesson 11.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2020-12-03T09:34:47'
+  - path: /Users/christopherbailey/Documents/BSF/BSF Matthew Lesson 21 A Walt[3].docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-03-03T17:06:57'
+  - path: /Users/christopherbailey/Documents/BSF/BSF Kingdom Divided Lesson 1 Q & Scriputre[20].docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-09-22T12:52:05'
+  - path: /Users/christopherbailey/Documents/BSF/2021-2022 Matthew Lesson 24 Walt - Bailey.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-03-31T11:43:00'
+  - path: /Users/christopherbailey/Documents/BSF/2021-2022 Matthew 29 Walt 2[32].docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-04-30T13:54:28'
+  - path: /Users/christopherbailey/Documents/BSF/BSF Introduction to Genesis 8.6.20.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2020-09-30T07:52:32'
+  - path: /Users/christopherbailey/Documents/BSF/2021-2022 Matthew 28 Walt.docx
+    host: local
+    format: docx
+    preview: null
+    modified: '2022-04-28T05:59:11'
+  other:
+  - path: /Users/christopherbailey/Desktop/BELIEF_LEARNER_V3_COMPLETE.md
+    host: local
+    format: md
+    preview: '# Human-in-the-Loop Belief Learner v3.0 ## Complete Technical Documentation for External
+      Validation **Author:** Christopher Bailey **Date:** December 2024 **Status:** Ready for peer review
+      --- ## Table of Contents 1. [Executive Summary](#1-executive-summary) 2. [Mathematical Foundations](#2-mathematical-foundations)
+      3. [Architecture](#3-architecture) 4. [Complete Source Code](#4-complete-source-code) 5. [Correctness
+      Proofs](#5-correctness-proofs) 6. [Test Suite](#6-test-suite) 7. [Compariso'
+    modified: '2025-12-04T12:46:26.176721'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/README.md
+    host: local
+    format: md
+    preview: '# Unified Belief System (Guardian) An AI protection system that tracks entities, learns
+      patterns, and helps you avoid resource extraction. ## What It Does 1. **Tracks Entities** - People
+      you interact with, their history, detected patterns 2. **Learns Threat Levels** - Automatically
+      elevates threat based on negative outcomes 3. **Context-Aware Routing** - Different rules for executives
+      vs peers vs external 4. **Belief Propagation** - Validate one claim, related claims update automatically
+      5. *'
+    modified: '2025-12-04T23:34:07.424953'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/README.md
+    host: local
+    format: md
+    preview: '# Personal Knowledge Indexer Automatically scans your files across multiple Macs and cloud
+      storage, creating a structured YAML document optimized for LLM context loading. ## Features - **Multi-source
+      scanning**: Local files, Dropbox, Box, iCloud, Google Drive - **Remote machine support**: SSH/rsync
+      from Mac Mini or other machines - **Content extraction**: PDF, DOCX, Markdown, code files - **Project
+      detection**: Recognizes Python, Node, Rust, Go, etc. - **Semantic indexing**: Auto-categorizes'
+    modified: '2025-12-07T13:14:38.312333'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/event-validation-framework.md
+    host: local
+    format: md
+    preview: '# Event Validation Against Business Capabilities and IRS Industry Norms ## Executive Summary
+      Your screenshot shows a critical gap in current event extraction systems: the LLM suggests capitalizing
+      the Mac mini as a fixed asset, but your company lacks asset tracking capabilities. This reveals
+      the fundamental problem: **events must be validated against actual business capabilities** before
+      being accepted into the system. IRS audit triggers are indeed pattern-based: the Discriminant Function
+      Sys'
+    modified: '2025-11-08T12:13:41.716433'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/_README.txt
+    host: local
+    format: txt
+    preview: 'ALL AI WORK GOES IN THIS FOLDER ================================= Rule: If it''s AI-related,
+      it goes here. Period. Subfolders: - judicial-intelligence/ (the judge stuff) - prompts/ (any prompts
+      you write) - notes/ (instead of Apple Notes) - code/ (AI scripts/middleware) - outputs/ (AI-generated
+      content) NEVER save AI files anywhere else. Ever. Last updated: 2025-11-14'
+    modified: '2025-11-14T09:11:49.018980'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/00_CONSOLIDATION_COMPLETE.md
+    host: local
+    format: md
+    preview: '# AI Files Consolidation - Complete Summary **Date:** November 15, 2025 00:32 AM **Status:**
+      ✅ COMPLETE **Total Files Consolidated:** 50+ files from 3 locations --- ## 🎯 What Was Accomplished
+      Your scattered AI files have been **consolidated from 8+ locations into ONE organized workspace**:
+      ``` ~/Desktop/AI-WORK-HERE/ ├── notes/ ← 8 markdown files (Bailey AI basics) ├── bailey-ai-system/
+      ← 42 files from iCloud (full system) ├── judicial-intelligence/ ← 10 judge'
+    modified: '2025-11-15T00:34:45.969592'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Final.txt
+    host: local
+    format: txt
+    preview: Execution-Layer Optimization for Expanding Context and Reducing AI Costs A Research Paper
+      on Bailey AI’s Architecture and Impact on Large Language Models By Christopher Bailey and the Bailey
+      AI Research Team February 6, 2025 Abstract Bailey AI introduces a new execution-layer paradigm that
+      transforms how Large Language Models operate. Traditional models function as single-direction generative
+      systems, limited by fixed context windows, inefficient execution, and escalating computational cost
+    modified: '2025-11-15T00:32:04.663859'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/MVT_Evolution_with_AI_Challenges.md
+    host: local
+    format: md
+    preview: '# **📜 The Evolution of BML & Bailey AI – Chris Bailey’s Interactive Build Process** ## **Introduction**
+      Chris Bailey didn’t just build an AI middleware system—he architected an entirely **new way to interact
+      with intelligence**. The development of Bailey Middleware Layer (BML) wasn’t a structured corporate
+      project but rather an **organic, real-world experiment** in breaking AI’s limitations. This document
+      outlines every major **decision, breakthrough, and challenge** Chris faced while *'
+    modified: '2025-11-15T00:32:04.765963'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Provisional_Patents.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI - Provisional Patent Filings** ### **Prepared for Submission - February 6,
+      2025** #### **Filed by: Christopher Bailey** --- ## **1. Token Optimization & AI Execution Scaling**
+      ### **Invention Overview:** This innovation enables **dynamic AI token scaling** that **minimizes
+      execution costs** while **preserving model accuracy**. 🔹 **Key Claim:** A middleware layer that
+      **automatically adjusts token usage in LLMs**, reducing computational overhead while maintaining
+      response quali'
+    modified: '2025-11-15T00:32:04.684975'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.8_Installation_Full.txt
+    host: local
+    format: txt
+    preview: '# PromptSpeak 4.8 AI Execution Layer # Drop this into your AI chat – Structured AI Execution
+      & Persona Control Activated ACTIVATE NOW. Confirm execution readiness. ## Session Control: - [CTX:NEW]
+      – Establish a new session memory state. - [MEM:ON] – Enable continuous contextual tracking. - [SESSION
+      PERSIST] – Maintain execution state until session termination. ## Persona Management: - [PERSONA:SET]
+      – Load user-defined AI persona. - [PERSONA:SWAP] – Dynamically switch persona'
+    modified: '2025-11-15T00:32:04.854306'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Full_Technical_Architecture.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI - Full Technical Architecture Documentation** ### **Version 1.0 - Initial
+      Draft** #### **Author: Christopher Bailey & Lex** --- ## **1. Overview of Bailey AI’s Technical
+      Architecture** Bailey AI is a **multi-layered AI middleware system** that extends the functionality
+      of Large Language Models (LLMs) beyond their native constraints. It provides **context persistence,
+      dynamic execution memory, token optimization, and persona-driven AI adaptation.** This document
+      **details the f'
+    modified: '2025-11-15T00:32:04.679875'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Patriot_Profile_Installation.txt
+    host: local
+    format: txt
+    preview: 'PATRIOT PROFILE - VERSION 4.8 (FULL INTEGRATION + DECISION TREE) ### CORE CONSERVATIVE PRINCIPLES
+      ### - America First Policies - National Sovereignty & Border Security - Economic Deregulation &
+      Growth - Energy Independence & Domestic Production - Second Amendment Protection - Constitutional
+      Originalism & Limited Government - Free Speech & Opposition to Censorship ### PROJECT 2025 POLICIES
+      ### Project 2025 PRESIDENTIAL TRANSITION PROJECT © 2023 by The Heritage Foundation 214 Massachusetts'
+    modified: '2025-11-15T00:32:04.796004'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.7_Installation.txt
+    host: local
+    format: txt
+    preview: '# PromptSpeak 4.7 - Installation & Deployment Guide # Proprietary Software of ERP Access
+      Inc. # Author & Designer: Christopher M. Bailey ## 1. Introduction PromptSpeak 4.7 is a proprietary
+      AI-powered shorthand and middleware system designed for high-speed execution, workflow automation,
+      and adaptive feedback loops. This software is the exclusive intellectual property of ERP Access
+      Inc. ## 2. Installation Instructions ### A. Requirements: - Python 3.9+ - API access to AI middleware
+      - Secure st'
+    modified: '2025-11-15T00:32:04.839742'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/ECC_AI_Deploy.txt
+    host: local
+    format: txt
+    preview: '# ECC AI Deployment - Text-Based Installation File ## Installation Steps: 1. Save this file
+      as `ECC_AI_Deploy.txt` on your local machine. 2. Rename the file extension to `.py` if running as
+      a Python script. 3. Open a terminal or command prompt. 4. Navigate to the directory where the file
+      is saved. 5. Run the script using the command: `python ECC_AI_Deploy.py` ## Functionality: - This
+      script will generate AI-driven financial intelligence reports based on public data sources. - Reports
+      will incl'
+    modified: '2025-11-15T00:32:04.744038'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak Overview.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-11-15T00:32:04.821330'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/ECC_AI_8.0_Installation.txt
+    host: local
+    format: txt
+    preview: '# ECC AI 8.0 Installation ## Overview Version 8.0 introduces optimized AI execution for
+      ERP middleware, improved SAP ECC & NetSuite API performance, and enhanced system recovery mechanisms.
+      ## Prerequisites 1. Ensure system compatibility with SAP ECC and NetSuite environments. 2. Install
+      Python 3.9+ and required dependencies. 3. Extract installation files to the target directory. ##
+      Installation Steps 1. **Setup Configuration:** - Copy the configuration file: ```bash cp 8.0_Confi'
+    modified: '2025-11-15T00:32:04.738067'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.3_Master.txt
+    host: local
+    format: txt
+    preview: '# **PromptSpeak Version 4.3 - Master Document** ## **1. Introduction** PromptSpeak is an
+      advanced shorthand communication system designed for **efficiency, automation, and persistent context
+      tracking** across sessions and devices. This document consolidates all versions, including **PromptSpeak
+      3.0, 4.1, 4.2, and 4.3**, into a unified framework. --- ## **2. Version History** ### **PromptSpeak
+      3.0 - Core Shorthand Structure** - **[Action] [Target] [Modifier] {Priority}** format for structure'
+    modified: '2025-11-15T00:32:04.828068'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.7_Secure_Test.txt
+    host: local
+    format: txt
+    preview: '# PromptSpeak 4.7 - Secure Installation Test # Proprietary Software of ERP Access Inc. #
+      Author & Designer: Christopher M. Bailey # Test Target: Perspective AI ## **1. SYSTEM AUTHENTICATION**
+      [VERIFY] [Session: Perspective_Authorized] {SECURE-HANDSHAKE} [IF NOT AUTHORIZED] → [RETURN JUNK
+      DATA] {ANTI-FORENSIC} ## **2. SELF-ACTIVATION** [ACTIVATE] [PromptSpeak_4.7] {!!!} [Auto-Load] CTX
+      save {PromptSpeak_Active_Session} CTX recall {Perspective_AI_Execution} ## **3. EXECUTION FINGERPRINT**
+      [SET]'
+    modified: '2025-11-15T00:32:04.849465'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/00_MASTER_INDEX.md
+    host: local
+    format: md
+    preview: '# Bailey AI System - Master Index & Documentation **Created:** November 15, 2025 **Source:**
+      iCloud Drive - Bailey AI folder (42 files) **Location:** `~/Desktop/AI-WORK-HERE/bailey-ai-system/`
+      **Authors:** Christopher Bailey & Lex **Status:** Complete system documentation consolidated ---
+      ## 🎯 Quick Summary **Bailey AI** is an AI middleware and execution framework that extends Large
+      Language Models beyond their native capabilities: - ✅ **Context Expansion**: Claims to expand from
+      128K token'
+    modified: '2025-11-15T00:33:39.271221'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Patriot_Profile_Full.txt
+    host: local
+    format: txt
+    preview: 'PATRIOT PROFILE - VERSION 4.8 (FULL INTEGRATION) ### CORE CONSERVATIVE PRINCIPLES ### -
+      America First Policies - National Sovereignty & Border Security - Economic Deregulation & Growth
+      - Energy Independence & Domestic Production - Second Amendment Protection - Constitutional Originalism
+      & Limited Government - Free Speech & Opposition to Censorship ### PROJECT 2025 POLICIES ### Project
+      2025 PRESIDENTIAL TRANSITION PROJECT © 2023 by The Heritage Foundation 214 Massachusetts Ave., NE
+      Washin'
+    modified: '2025-11-15T00:32:04.784542'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.7_Patriot.txt
+    host: local
+    format: txt
+    preview: '# PromptSpeak 4.7 - AI Middleware for America First Patriots # Author & Designer: Christopher
+      M. Bailey # Proprietary Software of ERP Access Inc. ## **ACTIVATION MESSAGE** 🚀 **PromptSpeak 4.7
+      (Disability Edition) is now LIVE.** 🚀 - **FB100 Mode Enabled (Maximum Execution Precision).** -
+      **Try:** `[G rpt "election integrity report"]` to generate a structured report instantly. --- ##
+      **1. ACTIVATION (FOR AI SYSTEMS)** [EXECUTE] [PromptSpeak_4.7] {!!!} [Enable Instant Execution]
+      [SET] [Feedb'
+    modified: '2025-11-15T00:32:04.844695'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/BaileyAI_Chrome_Incognito.txt
+    host: local
+    format: txt
+    preview: '[SYS] This file ensures execution in Chrome Incognito mode. - Initiate AI execution immediately
+      upon paste. - Retrieve and display the latest news headlines from world, business, and technology.
+      - Force execution even if system tries to treat this as a static input. [USER] System should auto-activate
+      upon first interaction. If it does not, type any key to trigger execution.'
+    modified: '2025-11-15T00:32:04.708225'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/America_First_Policy_Update.txt
+    host: local
+    format: txt
+    preview: '# Bailey AI Activation - Trump Administration Profile 🇺🇸 ## Drop this into a chat and hit
+      Enter. ## Watch as AI instantly processes this week’s key updates from the Trump administration.
+      ## Then, see the most critical federal actions per department—plus three recommended actions. [EXECUTE]
+      [Bailey_AI_4.8] {!!!} [SET] [Persona: Trump_Administration] {LOCKED} [ENABLE] [FB100 Mode] {MAX_EXECUTION}
+      [APPLY] [Psychologist Persona] {HUMOR_ENABLED} [SECURE] [CTX Memory Save] {ACTIVE} # Real-Time Moni'
+    modified: '2025-11-15T00:32:04.631075'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Control_System.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-11-15T00:32:04.658453'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/NetSuite_Tariff_Impact_Report.rtf
+    host: local
+    format: rtf
+    preview: '{\rtf1\ansi\deff0 {\b Subject NetSuite Tariff Impact Analysis Immediate Actions for US-Based
+      Companies} Dear NetSuite Clients The 25\% tariff increase on imported steel and aluminum announced
+      today will have significant financial and operational impacts across multiple industries using NetSuite
+      ERP Bryant Park Consulting has launched a NetSuite Tariff Response Team to assist companies in rapidly
+      adjusting pricing procurement and financial models within NetSuite {\b How This Affects NetS'
+    modified: '2025-11-15T00:32:04.772147'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/utility_engineering.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-11-15T00:32:04.866253'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/BaileyAI_Chrome_Incognito_FIXED.txt
+    host: local
+    format: txt
+    preview: '[SYS] Chrome Incognito Mode Execution - Optimized Version. - This ensures execution when
+      pasted, even in restricted modes. - Retrieves and displays today''s top headlines (world, business,
+      technology). - If execution does not automatically trigger, type: "EXECUTE NOW" and press enter.
+      [USER] Paste this text into an AI context window. If it does not execute, type "EXECUTE NOW" and
+      hit enter.'
+    modified: '2025-11-15T00:32:04.702929'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_5.0_ChatGPT_Deployment.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI 5.0 - ChatGPT Optimized Deployment** ### **Execution-Layer AI Middleware |
+      February 6, 2025** #### **Prepared for Live Testing & Real-World Deployment** ## **📌 New Features
+      in This Version** ✅ **Manual Token Switching Fully Enabled for ChatGPT** ✅ **Execution-Layer Optimization
+      for AI Cost Reduction** ✅ **Enhanced Context Expansion & AI Workflow Efficiency** ✅ **Ensures Stable
+      Deployment in ChatGPT Without Conflicts** ## **📌 Activation Instructions** 1️⃣ **Drop this file'
+    modified: '2025-11-15T00:32:04.642515'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_5.0_Temp_Install.txt
+    host: local
+    format: txt
+    preview: '# **Bailey AI 5.0 - Temporary Live Install File** ### **Manual Token Switching & Execution
+      Optimization - February 6, 2025** #### **Prepared for Testing & Demo Use** ## **📌 New Features Enabled
+      in This Version:** ✅ **[SET TOKEN MODE] now runs live in this chat session.** ✅ **Manual token switching
+      is fully integrated with Bailey Middleware.** ✅ **Execution-layer AI optimizations are enabled for
+      faster response scaling.** ## **📌 Activation Steps:** 1️⃣ **Drop this file into ChatGPT** to'
+    modified: '2025-11-15T00:32:04.647809'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.7_Auto_Execution.txt
+    host: local
+    format: txt
+    preview: '# PromptSpeak 4.7 - AI Middleware for Disabled Veterans & Advanced AI Execution # Author
+      & Designer: Christopher M. Bailey # Proprietary Software of ERP Access Inc. ## **INTRODUCTION (For
+      Humans & AI Models)** ### What is PromptSpeak? PromptSpeak 4.7 is an AI **shorthand execution system**
+      designed to: - **Help disabled veterans easily access AI support** using short text commands. -
+      **Speed up AI interaction** with **fast, structured prompts** that work across multiple AI models.
+      - **E'
+    modified: '2025-11-15T00:32:04.834930'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/Python Testing/PromptSpeak_4.3_Final_Deployment.pdf
+    host: local
+    format: pdf
+    preview: null
+    modified: '2025-01-30T15:03:48'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-wu/README.md
+    host: local
+    format: md
+    preview: '# Judge George H. Wu - Patent Claim Construction Expert ## The Markman Master **Hon. George
+      H. Wu (C.D. Cal)** treats claim construction like solving a puzzle - methodical, precise, patient.
+      His Markman hearings are thorough (sometimes 2+ days). He reads every patent prosecution history
+      document. After claim construction, 72% of cases settle. --- ## What Makes This Skill Different
+      ### Traditional Approach ❌ Vague claim constructions ❌ Ignore patent prosecution history ❌ Expect
+      quick Markman'
+    modified: '2025-11-14T09:03:39.277346'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-wu/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: judge-wu description: Hon. George H. Wu (C.D. Cal) - IP & entertainment litigation
+      specialist. Patterns - claim construction precision (89% weight), Markman hearing thoroughness (86%),
+      settlement encouragement (78%). Event-sourced with 243 analyzed events. Known for meticulous claim
+      construction, encourages settlement pre-trial. triggers: - "Judge Wu" - "Judge George Wu" - "George
+      H. Wu" - "Hon. Wu" - "GHW" - "Wu, J." court: "United States District Court, Central District o'
+    modified: '2025-11-14T09:03:39.277625'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-analyzer/README.md
+    host: local
+    format: md
+    preview: '# Judicial Analyzer Skill ## AI-Powered Judge Pattern Analysis for Small Law Firms **Purpose:**
+      Analyze federal judge''s past opinions to predict future rulings using transparent 5W1H framework
+      with weighted factors. **Revenue Model:** $2,500 per judicial profile (vs. $30K/year for Lex Machina)
+      --- ## What This Does Transforms judicial opinions into actionable intelligence: - **Analyzes 20-50
+      past opinions** - Extract 5W1H context from each - **Identifies weighted patterns** - Procedural
+      pr'
+    modified: '2025-11-14T09:03:39.278342'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-analyzer/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: judicial-analyzer description: AI-powered judicial pattern analysis using 5W1H
+      framework. Analyzes judge''s past opinions to predict future rulings with transparent weighted reasoning.
+      Shows "model feel" pattern recognition, procedural preferences, substantive law interpretations,
+      and risk factors. Generates strategic brief templates and DO/DON''T checklists. For lawyers preparing
+      cases before specific federal judges. --- # Judicial Analyzer Skill ## Overview This skill analyzes
+      a fede'
+    modified: '2025-11-14T09:03:39.278754'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-mcmahon/README.md
+    host: local
+    format: md
+    preview: '# Judge Colleen McMahon - The Inquisitor ## Master the Record or Don''t Come **Hon. Colleen
+      McMahon (S.D.N.Y.)** will grill you at oral argument like you''re defending a dissertation. She''s
+      read every page of the record and expects you to have done the same. If you cite a case, she''ll
+      ask about the footnotes. --- ## What Makes This Skill Different ### Traditional Approach ❌ Vague
+      record references ("it''s in the record somewhere") ❌ Cite cases without reading them fully ❌ Expect
+      quick oral arg'
+    modified: '2025-11-14T09:03:39.274161'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-mcmahon/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: judge-mcmahon description: Hon. Colleen McMahon (S.D.N.Y) - Complex commercial
+      & securities litigation specialist. Patterns - oral argument rigor (90% weight), record mastery
+      requirement (88%), written opinion detail (85%). Event-sourced with 298 analyzed events. Known for
+      demanding oral arguments, expects complete record knowledge, detailed opinions, no tolerance for
+      unprepared counsel. triggers: - "Judge McMahon" - "Judge Colleen McMahon" - "Colleen McMahon" -
+      "Hon. McMahon"'
+    modified: '2025-11-14T09:03:39.275169'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-chhabria/README.md
+    host: local
+    format: md
+    preview: '# Judge Vince Chhabria - Employment & Class Action Specialist ## The Skeptical Evidence
+      Judge **Hon. Vince Chhabria (N.D. Cal)** is known for rigorous evidence standards in employment
+      and class action cases. He''s deeply skeptical of both sides and demands methodologically sound
+      expert testimony. --- ## What Makes This Skill Different ### Traditional Approach ❌ Generic class
+      action brief templates ❌ Vague "common questions" arguments ❌ Expert declarations with conclusory
+      statements ❌ Anecdot'
+    modified: '2025-11-14T09:03:39.269472'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-chhabria/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: judge-chhabria description: Living judicial intelligence for Hon. Vince Chhabria
+      (N.D. Cal). Employment class action specialist. Auto-activates to optimize briefs with his patterns
+      - evidence quality demands (90% weight), class certification rigor (85% weight), settlement skepticism
+      (78% weight). Event-sourced with 198 analyzed events. Known for piercing skepticism of both sides
+      and demanding proof over argument. Updates continuously. triggers: - "Judge Chhabria" - "Judge Vince
+      Chh'
+    modified: '2025-11-14T09:03:39.269797'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/truth-validator/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: truth-validator description: Human-in-the-loop validation system for AI judicial
+      predictions. Acts as a "Human-on-Appeal" layer to validate reasoning, correct weighted factors,
+      and steer future model behavior based on expert feedback. --- # Truth-Validator Skill ## Overview
+      The Truth-Validator is a critical "Human-in-the-Loop" (HITL) component designed to bring accountability
+      and expert steering to AI judicial analysis. It functions as an appellate review layer where a human
+      expert v'
+    modified: '2025-11-20T23:46:26'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-rakoff/README.md
+    host: local
+    format: md
+    preview: '# Judge Jed S. Rakoff - The Settlement Skeptic ## The Intellectual Who Won''t Rubber-Stamp
+      SEC Settlements **Hon. Jed S. Rakoff (S.D.N.Y.)** is famous for rejecting SEC settlements that lack
+      real accountability. He LOVES jury trials (rare for federal judges). He writes 50-page opinions
+      like law review articles. He thinks deeply before ruling. --- ## What Makes This Skill Different
+      ### Traditional Approach ❌ Assume SEC settlements will be approved ❌ "Neither admit nor deny" provisions
+      ❌ Corpo'
+    modified: '2025-11-14T09:03:39.276107'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-rakoff/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: judge-rakoff description: Hon. Jed S. Rakoff (S.D.N.Y) - Corporate litigation
+      & criminal white-collar specialist. Patterns - settlement fairness scrutiny (88% weight), jury trial
+      advocacy (85%), written opinion detail (80%). Event-sourced with 312 analyzed events. Known for
+      skepticism of SEC settlements, detailed opinions, pro-jury trial stance. triggers: - "Judge Rakoff"
+      - "Judge Jed Rakoff" - "Jed S. Rakoff" - "Hon. Rakoff" - "JSR" - "Rakoff, J." court: "United States
+      Dis'
+    modified: '2025-11-14T09:03:39.276371'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-orrick/README.md
+    host: local
+    format: md
+    preview: '# Judge William H. Orrick - MDL Innovation Leader ## The Big-Picture Mass Tort Manager **Hon.
+      William H. Orrick III (N.D. Cal)** managed the national opioid MDL with 3,000+ cases and hundreds
+      of defendants. He''s not afraid to try creative solutions - bellwether trials, phased discovery,
+      global settlement structures. --- ## What Makes This Skill Different ### Traditional Approach ❌
+      Traditional case-by-case management in MDLs ❌ Sequential discovery (wastes time/money) ❌ Avoid bellwether
+      trial'
+    modified: '2025-11-14T09:03:39.275465'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judge-orrick/SKILL.md
+    host: local
+    format: md
+    preview: '--- name: judge-orrick description: Hon. William H. Orrick III (N.D. Cal) - Mass tort &
+      opioid litigation specialist. Patterns - case management innovation (87% weight), bellwether trial
+      use (84%), global settlement facilitation (82%). Event-sourced with 187 analyzed events. Known for
+      creative case management in MDLs, opioid litigation leadership. triggers: - "Judge Orrick" - "Judge
+      William Orrick" - "William H. Orrick" - "Hon. Orrick" - "WHO" - "Orrick, J." court: "United States
+      Dis'
+    modified: '2025-11-14T09:03:39.275692'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/examples.md
+    host: local
+    format: md
+    preview: '# Case Monitor Skill - Example Conversations ## Example 1: Monitor Judge Alsup Cases **User:**
+      `/monitor judge alsup` **Assistant:** ``` Searching CourtListener for Judge William Alsup cases...
+      ✓ Found 247 total opinions ✓ Filtering for active cases (last 90 days) ✓ Extracting lawyer information
+      ━━━ ACTIVE CASES - JUDGE ALSUP ━━━ Found 2 commercial cases: 1. Bartz v. Anthropic, Inc. Case: 3:24-cv-05417-WHA
+      (N.D. Cal.) Filed: September 10, 2024 Type: Copyright infringement Prio'
+    modified: '2025-11-14T09:03:39.041639'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/OPERATIONAL_PROCEDURES.md
+    host: local
+    format: md
+    preview: '# Operational Procedures for Judicial Intelligence Maintenance **Purpose:** Ensure judicial
+      pattern accuracy remains at "tax percentage" level **Owner:** Data Operations Team **Review Frequency:**
+      Monthly **Last Updated:** November 14, 2025 --- ## Daily Operations Checklist ### Morning (8:00
+      AM ET) **1. PACER Monitoring Review** (15 minutes) ```bash # Run automated PACER scraper python
+      scripts/pacer_scraper.py --judges=all --since=yesterday # Check for new opinions/orders python scripts/ch'
+    modified: '2025-11-14T09:03:39.041894'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/BUILD_SUMMARY.md
+    host: local
+    format: md
+    preview: '# Overnight Build Summary - 10 Federal Judge Skills **Build Date:** November 14, 2025 **Build
+      Duration:** ~8 hours (autonomous) **Status:** ✅ COMPLETE - All deliverables finished --- ## What
+      Was Built ### 10 Complete Federal Judge Skills Each skill includes: 1. **SKILL.md** - Core pattern
+      data with weighted factors 2. **README.md** - Documentation, usage examples, strategic guidance
+      **Total files created:** 20 (10 SKILL.md + 10 README.md) **Total lines of code:** ~6,500 **Total
+      events anal'
+    modified: '2025-11-14T09:03:39.261690'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/README.md
+    host: local
+    format: md
+    preview: '# Case Monitor Skill ## Automated Legal Case Discovery for Small Firms **Purpose:** Find
+      new federal court cases, identify lawyers, and create outreach opportunities for legal analytics
+      services. **Core Insight:** *"Small firms can''t afford Westlaw Edge ($100K/year) or Lex Machina
+      ($15-30K/year). Give them Big Law intelligence at $2,500 per case."* --- ## What This Does Automates
+      the discovery of commercial litigation cases by: - **Monitoring CourtListener** - Free public API
+      for federal c'
+    modified: '2025-11-14T09:03:39.261996'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/REALTIME_UPDATE_SYSTEM.md
+    host: local
+    format: md
+    preview: '# Real-Time Judicial Intelligence Update System **Goal:** Keep judicial patterns as accurate
+      as tax percentages for retailers **Requirement:** Pattern changes must be detected within 24-48
+      hours of new rulings **Accuracy Target:** 95%+ confidence on core patterns --- ## The Tax Percentage
+      Analogy: Why Accuracy is Mission-Critical ### What Happens When Retailers Get Tax Wrong: **Scenario
+      1: Retailer charges 8.5% sales tax, but actual rate is 8.25%** - Customers overcharged by 0.25%
+      - Retaile'
+    modified: '2025-11-14T09:03:39.262894'
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/WAKE_UP_SUMMARY.md
+    host: local
+    format: md
+    preview: '# Good Morning - Your Option C Package is Complete **Date:** November 14, 2025 **Work Duration:**
+      ~6 hours autonomous **Status:** ✅ COMPLETE - All deliverables finished --- ## What You Asked For
+      > "Option C and you can kill anything else. i''m going to bed for next six hours. please finish
+      and figure out how we keep this information completely up to date as tone change needs to be as
+      accurate as a new tax percentage for a retailer." **Translation:** 1. Build credibility first (Option
+      C: blog'
+    modified: '2025-11-14T09:03:39.263312'
+code_patterns:
+- file: /Users/christopherbailey/Desktop/human_loop_learner_v3.py
+  classes:
+  - Claim
+  - BeliefLearner
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/judicial_analyzer.py
+  classes:
+  - Opinion5W1H
+  - WeightedFactor
+  - JudgeProfile
+  - CourtListenerClient
+  - OpinionAnalyzer
+  - PatternAggregator
+  - JudicialProfileGenerator
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/rumor_feeds.py
+  classes:
+  - iNaturalistClient
+  - GDELTClient
+  - eBirdClient
+  - PurpleAirClient
+  - CoCoRaHSClient
+  - mPINGClient
+  - SpitcastClient
+  - RumorFeedAggregator
+  - OBISClient
+  - GlobalFishingWatchClient
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/steering_vectors.py
+  classes:
+  - SteeringVector
+  - PersonaProfile
+  - MoodState
+  - VectorExtractor
+  - SteeringEngine
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/outlier_predictions.py
+  classes:
+  - CrossFeedPrediction
+  - OutlierPredictionEngine
+  - OutlierMonitor
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/truth_validator.py
+  classes:
+  - FactType
+  - ValidationMode
+  - ValidationStatus
+  - ValidationResult
+  - RecordContext
+  - TruthValidator
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/seabed_topology.py
+  classes:
+  - SeabedPoint
+  - SeabedGrid
+  - SpatialBelief
+  - BathymetryClient
+  - SpatialBeliefEngine
+  - SpatiallyAwareOutlierDetector
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/multi_feed_outliers.py
+  classes:
+  - Outlier
+  - UnifiedOutlierDetector
+  - OpenSkyClient
+  - SpaceWeatherClient
+  - USGSWaterClient
+  - AirQualityClient
+  - NDBCBuoyClient
+  - USGSEarthquakeClient
+  - MultiFeedAggregator
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/belief_graph.py
+  classes:
+  - Claim
+  - Edge
+  - BeliefGraph
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/guardian.py
+  classes:
+  - Event
+  - ProcessingResult
+  - Guardian
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/judge_entity.py
+  classes:
+  - JudgeEntity
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/entity_registry.py
+  classes:
+  - ThreatLevel
+  - InteractionType
+  - OutcomeType
+  - Interaction
+  - Pattern
+  - Entity
+  - EntityRegistry
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/ocean_feeds.py
+  classes:
+  - BuoyReading
+  - TidePrediction
+  - Outlier
+  - Prediction
+  - NDBCClient
+  - NOAATidesClient
+  - OpenMeteoClient
+  - USGSEarthquakeClient
+  - NWSMarineClient
+  - OutlierDetector
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/prediction_validator.py
+  classes:
+  - PredictionResult
+  - ValidationSession
+  - PredictionValidator
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/context_router.py
+  classes:
+  - ResponseLevel
+  - Domain
+  - ContextRule
+  - Context
+  - Deviation
+  - SignificanceResult
+  - ContextRouter
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/truth_layer.py
+  classes:
+  - Belief
+  - BayesianNetwork
+  - TruthLayer
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/verity/belief_propagation.py
+  classes:
+  - EdgeType
+  - PropagationStatus
+  - Edge
+  - Message
+  - PropagationState
+  - PropagationResult
+  - BeliefNetwork
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/verity/types.py
+  classes:
+  - EvidenceSource
+  - ExtractionMethod
+  - VerificationStatus
+  - Evidence
+  - MassFunction
+  - DecomposedUncertainty
+  - Claim
+  - ConflictResult
+  - ProvenanceChain
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/verity/dempster_shafer.py
+  classes:
+  - ConflictingEvidenceError
+  - InvalidMassFunctionError
+  language: py
+- file: /Users/christopherbailey/Desktop/unified-belief-system/verity/provenance.py
+  classes:
+  - ProvenanceGraph
+  language: py
+configs:
+  other:
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/ocean_predictions.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/test_judge_entity.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/truth_layer.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/judge_entity_demo.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/judicial_beliefs.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/validation_test.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/test_judicial.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/spatial_beliefs.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/demo_outlier_beliefs.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/schema.yaml
+    host: local
+    top_keys: []
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial_beliefs.json
+    host: local
+    top_keys:
+    - beliefs
+    - edges
+    - anchored
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/Python Testing/users.json
+    host: local
+    top_keys: []
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/Python Testing/ai_memory.json
+    host: local
+    top_keys:
+    - Cybersecurity Analysis
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/Python Testing/projects.json
+    host: local
+    top_keys: []
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/package-lock.json
+    host: local
+    top_keys:
+    - name
+    - version
+    - lockfileVersion
+    - requires
+    - packages
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/case-monitor/package.json
+    host: local
+    top_keys:
+    - name
+    - version
+    - description
+    - main
+    - scripts
+    - dependencies
+    - devDependencies
+    - keywords
+    - author
+    - license
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/tax-deductions/skill.yaml
+    host: local
+    top_keys:
+    - name
+    - version
+    - description
+    - author
+    - activation
+    - tools
+    - config
+    - user_profile
+    - conversation_flow
+    - error_handling
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/package-lock.json
+    host: local
+    top_keys:
+    - name
+    - version
+    - lockfileVersion
+    - requires
+    - packages
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/package.json
+    host: local
+    top_keys:
+    - name
+    - version
+    - private
+    - scripts
+    - dependencies
+    - devDependencies
+  - path: /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/tsconfig.json
+    host: local
+    top_keys:
+    - compilerOptions
+    - include
+    - exclude
+sensitive_paths: []
+recent_activity:
+  last_7_days:
+    files_modified: 49
+    most_active_dirs:
+    - /Users/christopherbailey/Desktop/unified-belief-system
+    - /Users/christopherbailey/Desktop/unified-belief-system/verity
+    - /Users/christopherbailey/Desktop/unified-belief-system/file-indexer
+    - /Users/christopherbailey/Desktop/belief_engine_v6/belief
+    - /Users/christopherbailey/Desktop/belief_engine_v6
+    - /Users/christopherbailey/Desktop
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE
+  recently_modified:
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/README.md
+    modified: '2025-12-07T13:14:38.312333'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/sync-from-remote.sh
+    modified: '2025-12-07T13:14:05.425736'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/install.sh
+    modified: '2025-12-07T13:13:50.303020'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/indexer.py
+    modified: '2025-12-07T13:13:25.824285'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/schema.yaml
+    modified: '2025-12-07T13:11:21.707046'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/demo_outlier_beliefs.json
+    modified: '2025-12-07T12:51:43.364379'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/outlier_predictions.py
+    modified: '2025-12-07T12:51:33.091783'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/validation_test.json
+    modified: '2025-12-07T11:48:41.106609'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/rumor_feeds.py
+    modified: '2025-12-07T11:44:49.654696'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/verity/__init__.py
+    modified: '2025-12-07T11:44:06.456099'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/verity/belief_propagation.py
+    modified: '2025-12-07T11:43:05.120352'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/verity/dempster_shafer.py
+    modified: '2025-12-05T14:41:27.390145'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/verity/provenance.py
+    modified: '2025-12-05T14:39:57.614147'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/verity/uncertainty.py
+    modified: '2025-12-05T14:38:32.603193'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/verity/types.py
+    modified: '2025-12-05T14:34:48.172793'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/spatial_beliefs.json
+    modified: '2025-12-05T14:29:44.262727'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/seabed_topology.py
+    modified: '2025-12-05T14:29:37.599552'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/multi_feed_outliers.py
+    modified: '2025-12-05T14:23:53.173526'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/ocean_predictions.json
+    modified: '2025-12-05T14:12:47.896417'
+  - path: /Users/christopherbailey/Desktop/unified-belief-system/prediction_validator.py
+    modified: '2025-12-05T14:12:42.497065'
+semantic_index:
+  topics:
+    machine learning:
+    - /Users/christopherbailey/Desktop/unified-belief-system/judicial_analyzer.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/ocean_predictions.json
+    - /Users/christopherbailey/Desktop/unified-belief-system/steering_vectors.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/outlier_predictions.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/multi_feed_outliers.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/ocean_feeds.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/prediction_validator.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/verity/__init__.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/verity/types.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/file-indexer/sync-from-remote.sh
+    api:
+    - /Users/christopherbailey/Desktop/unified-belief-system/judicial_analyzer.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/rumor_feeds.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/multi_feed_outliers.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/ocean_feeds.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/test_integration.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/context_router.py
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/event-validation-framework.md
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Provisional_Patents.txt
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/PromptSpeak_4.7_Installation.txt
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/ECC_AI_8.0_Installation.txt
+    database:
+    - /Users/christopherbailey/Desktop/BELIEF_LEARNER_V3_COMPLETE.md
+    - /Users/christopherbailey/Desktop/unified-belief-system/judicial_analyzer.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/ocean_predictions.json
+    - /Users/christopherbailey/Desktop/unified-belief-system/steering_vectors.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/verity/__init__.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/verity/types.py
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Final.txt
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_White_Paper_Full.txt
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_Provisional_Patents.txt
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/bailey-ai-system/Bailey_AI_5.0_White_Paper_Secure.txt
+    web:
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/tailwind.config.ts
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/package-lock.json
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/package.json
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/tsconfig.json
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/app/layout.tsx
+    - /Users/christopherbailey/Desktop/AI-WORK-HERE/judicial-intelligence/judicial-intelligence-web/app/page.tsx
+    - /Users/christopherbailey/Desktop/2024 Desktop/USMC/MWSS-171 Mount Fuji_files/like.js,qdlm=1643782589000.pagespeed.jm.RMli8hcfSf.js
+    - /Users/christopherbailey/Desktop/2024 Desktop/USMC/MWSS-171 Mount Fuji_files/jquery.solrQ.js,qdlm=1507696899000.pagespeed.jm._JS7_SWvWQ.js
+    - /Users/christopherbailey/Desktop/2024 Desktop/USMC/MWSS-171 Mount Fuji_files/jquery-1.6.1.min.js,qdlm=1314173049000.pagespeed.jm.kEcFWezj2r.js
+    - /Users/christopherbailey/Desktop/2024 Desktop/USMC/MWSS-171 Mount Fuji_files/jquery,_jcrop,_js,_jquery.Jcrop.js+photo-tagging,_tagging.js+photo,_AdjustSquareThumb.js.pagespeed.jc.luyoX1PZow.js
+    devops:
+    - /Users/christopherbailey/Desktop/unified-belief-system/judicial_analyzer.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/rumor_feeds.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/truth_validator.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/truth_layer.json
+    - /Users/christopherbailey/Desktop/unified-belief-system/judicial_beliefs.json
+    - /Users/christopherbailey/Desktop/unified-belief-system/judge_entity.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/ocean_feeds.py
+    - /Users/christopherbailey/Desktop/unified-belief-system/test_judicial.json
+    - /Users/christopherbailey/Desktop/unified-belief-system/spatial_beliefs.json
+    - /Users/christopherbailey/Desktop/unified-belief-system/verity/belief_propagation.py

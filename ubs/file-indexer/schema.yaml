@@ -1,0 +1,171 @@
+# Knowledge Index Schema
+# This YAML is designed for efficient LLM context loading
+# Supports partial loading by section
+
+meta:
+  version: "1.0"
+  generated_at: "2025-12-07T12:00:00Z"
+  sources:
+    - host: "macbook-pro"
+      last_scan: "2025-12-07T12:00:00Z"
+      paths_scanned: 15234
+    - host: "mac-mini"
+      last_scan: "2025-12-07T11:45:00Z"
+      paths_scanned: 8921
+    - host: "dropbox"
+      last_scan: "2025-12-07T12:00:00Z"
+      paths_scanned: 3421
+  stats:
+    total_files: 27576
+    total_size_mb: 4521
+    documents: 1234
+    code_files: 8456
+    configs: 342
+
+# Projects - grouped by detected project roots
+projects:
+  - name: "unified-belief-system"
+    path: "~/Desktop/unified-belief-system"
+    host: "macbook-pro"
+    type: "python"
+    description: "Bayesian belief network for multi-feed anomaly detection"
+    key_files:
+      - path: "truth_layer.py"
+        purpose: "Core Bayesian network implementation"
+        size_kb: 8
+        modified: "2025-12-07"
+      - path: "outlier_predictions.py"
+        purpose: "Cross-feed prediction engine"
+        size_kb: 19
+        modified: "2025-12-07"
+    dependencies:
+      - "urllib"
+      - "json"
+      - "statistics"
+    summary: |
+      Multi-feed anomaly detection system combining NDBC buoys, USGS earthquakes,
+      OpenSky aircraft, and crowdsourced data. Uses Beta distribution beliefs
+      with spatial awareness from seabed topology.
+
+# Documents - research, notes, papers
+documents:
+  categories:
+    research:
+      - title: "Machine Learning Notes"
+        path: "~/Documents/Research/ml-notes.md"
+        host: "macbook-pro"
+        format: "markdown"
+        topics: ["neural networks", "bayesian inference", "optimization"]
+        summary: "Personal notes on ML fundamentals and advanced topics"
+        last_modified: "2025-11-15"
+
+    legal:
+      - title: "Contract Template"
+        path: "~/Dropbox/Legal/contract-template.docx"
+        host: "dropbox"
+        format: "docx"
+        extracted_text_preview: "This agreement is entered into..."
+
+    financial:
+      - title: "2024 Tax Documents"
+        path: "~/Box/Taxes/2024/"
+        host: "box"
+        format: "directory"
+        contains: ["W2.pdf", "1099s/", "receipts/"]
+        sensitive: true  # Flag for LLM to not include details
+
+# Code snippets - reusable patterns detected
+code_patterns:
+  - name: "API Client Pattern"
+    language: "python"
+    found_in:
+      - "unified-belief-system/multi_feed_outliers.py"
+      - "unified-belief-system/rumor_feeds.py"
+    pattern: |
+      class {Name}Client:
+          BASE_URL = "..."
+          def fetch(self, **params) -> List[Dict]:
+              url = f"{self.BASE_URL}?" + urllib.parse.urlencode(params)
+              with urllib.request.urlopen(url, timeout=10) as resp:
+                  return json.loads(resp.read().decode())
+
+  - name: "Dataclass with Properties"
+    language: "python"
+    found_in:
+      - "unified-belief-system/truth_layer.py"
+    pattern: |
+      @dataclass
+      class {Name}:
+          field: type = default
+          @property
+          def computed(self) -> type:
+              return self.field / something
+
+# Configurations - dotfiles, settings
+configs:
+  shell:
+    - path: "~/.zshrc"
+      host: "macbook-pro"
+      aliases:
+        - "ll=ls -la"
+        - "gst=git status"
+      exports:
+        - "PATH"
+        - "EDITOR"
+
+  git:
+    - path: "~/.gitconfig"
+      host: "macbook-pro"
+      user_email: "chris@example.com"
+      default_branch: "main"
+
+  editors:
+    - name: "VS Code"
+      settings_path: "~/Library/Application Support/Code/User/settings.json"
+      extensions_count: 42
+      theme: "One Dark Pro"
+
+# Credentials/secrets locations (paths only, never contents)
+sensitive_paths:
+  - "~/.ssh/"
+  - "~/.aws/"
+  - "~/.env"
+  - "~/Dropbox/Credentials/"
+  note: "These paths contain sensitive data - never index contents"
+
+# Recent activity - what you've been working on
+recent_activity:
+  last_7_days:
+    most_modified_projects:
+      - "unified-belief-system"
+      - "client-project-x"
+    new_files: 23
+    deleted_files: 5
+
+  frequently_accessed:
+    - "~/Desktop/unified-belief-system/"
+    - "~/Documents/Notes/"
+    - "~/Dropbox/Shared/"
+
+# Semantic index - for LLM retrieval
+semantic_index:
+  topics:
+    "bayesian inference":
+      - "unified-belief-system/truth_layer.py"
+      - "Documents/Research/ml-notes.md"
+    "ocean data":
+      - "unified-belief-system/multi_feed_outliers.py"
+      - "unified-belief-system/seabed_topology.py"
+    "api integration":
+      - "unified-belief-system/rumor_feeds.py"
+
+  entities:
+    "NDBC":
+      type: "data source"
+      references:
+        - "multi_feed_outliers.py:361"
+    "TruthLayer":
+      type: "class"
+      references:
+        - "truth_layer.py:97"
+        - "outlier_predictions.py:32"
