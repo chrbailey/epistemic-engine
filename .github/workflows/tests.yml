@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+# Most of this repo's test suite depends on private packages not on PyPI
+# (belief_math, guardian, truth_validator, truth_layer). Public CI only
+# runs the one test file with no private-dep imports:
+# tests/test_efc_llm_integration.py. Full suite runs locally on the
+# author's machine where those packages are present.
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -22,9 +27,6 @@ jobs:
       - name: Install pytest
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
-      # test_ewm_all.py imports belief_math, which is a private package not
-      # on PyPI. Exclude it from public CI; it runs locally when belief-math
-      # is available.
-      - name: Run tests
-        run: python -m pytest tests/ -v --tb=short --ignore=tests/test_ewm_all.py
+          pip install pytest pytest-asyncio
+      - name: Run public-CI-eligible tests
+        run: python -m pytest tests/test_efc_llm_integration.py -v --tb=short
